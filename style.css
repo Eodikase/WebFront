@@ -16,15 +16,17 @@ body {
     display: inline;
 }
 
-.navbar {
-    width: 100%;
+.navbar-ul {
+    width: auto;
     height: 65px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     background-color: orchid;
+    margin: 0;
 }
+
 
 
 .logo-img {
@@ -40,6 +42,23 @@ ul {
     width: 100%;
     height: 315px;
     background-color: orange;
+    display: flex;
+}
+
+.banner-wrap {
+    width: 100%;
+    /* 공평하게 너비를 나눠가짐 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+.banner-img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    background-color: beige;
 }
 
 .container {
@@ -73,13 +92,7 @@ ul {
     background-color: aquamarine;
 }
 
-.footer {
-    background-color: rgb(178, 78, 178);
-    width: 100%;
-    height: 150px;
-    position: absolute;
-    /*bottom: 0;*/
-}
+
 
 .main-section {
     background-color: pink;
@@ -123,4 +136,18 @@ ul {
 
 .section-text {
     display: block;
+}
+
+.footer {
+    background-color: rgb(178, 78, 178);
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    /*bottom: 0;*/
+}
+
+.top-keywords-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
