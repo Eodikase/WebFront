@@ -64,4 +64,11 @@ body {
 .section-wrap {
     width: 100%;
     /* 공평하게 너비를 나눠가짐 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-text {
+    display: block;
 }
