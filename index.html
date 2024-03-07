@@ -4,33 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>어디카세</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- axios -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
     <link rel="stylesheet" type="text/css"
         href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
-
 </head>
 
 <body>
-    <script>
-    </script>
-
     <div class="container">
-        <div class="header">
+        <div class="header-index">
             <ul class="navbar-ul">
-                <li>
-                    <img class="logo-img" src="./img/app-logo.png">
+                <li><a href="index.html">
+                        <img class="logo-img" src="../img/app-logo.png">
+                    </a>
                 </li>
                 <li>
-                    <a href="index.html">어디카세</a>
+                    <a href="./index.html">
+                        <h3>어디카세</h3>
+                    </a>
                 </li>
                 <li>
-                    <a href="course.html">코스 둘러보기</a>
+                    <a href="./html/course.html">
+                        <h3>코스 둘러보기</h3>
+                    </a>
                 </li>
                 <li class="search">
-                    <input type="search" placeholder="코스나 매장을 검색해보세요" onfocus="this.placeholder=''"
-                        onblur="this.placeholder='코스나 매장을 검색해보세요'">
+                    <form action="/html/search.html" method="get">
+                        <input class="search-input" type="search" name="keyword" placeholder="코스를 검색해보세요">
+                    </form>
                 </li>
             </ul>
         </div>
@@ -39,39 +43,39 @@
             <div class="body-section1">
                 <div class="section-wrap">
                     <div class="section-text">
-                        <h1>내 취향으로<br>짜보는 하루</h1>
-                        <p class="text">맛집, 놀거리, 카페, 술집 이 모든걸<br>
-                            고민하지 않도록 취향대로 추천해드려요. </p>
+                        <h1>내 취향으로<br>짜보는 소중한 하루</h1>
+                        <p class="text">맛집, 놀거리, 카페 이 모든걸<br>
+                            고민할 필요없이 추천해드립니다. </p>
                     </div>
                 </div>
                 <div class="section-wrap">
-                    <img src="img/img1.svg">
+                    <img src="../img/main-page-img/img1.png">
                 </div>
             </div>
             <div class="body-section2">
                 <div class="section-wrap">
-                    <img src="img/img2.svg">
+                    <img src="../img/main-page-img/img2.png">
                 </div>
                 <div class="section-wrap">
                     <div class="section-text">
-                        <h1>위치 기반<br>매장 추천</h1>
-                        <p class="text">선택한 지역 주변을 우선으로 매장을 추천해드려요. </p>
+                        <h1>위치 기반으로<br>주변 인기 매장 추천</h1>
+                        <p class="text">선택한 지역 주변으로 우선 추천해줘서 <br> 어디갈지 고민하지 않아도 돼요</p>
                     </div>
                 </div>
             </div>
             <div class="body-section3">
                 <div class="section-wrap">
                     <div class="section-text">
-                        <h1>주요 번화가 <br>인기 매장</h1>
-                        <p class="text">어느 매장을 갈지 고민되나요?<br>
-                            서울의 인기 지역의 매장들을 추천해드립니다! </p>
-                        <input class="move-button" type="button" onclick="location.href='https://www.naver.com/'"
-                            value="지역 인기 코스 보러가기">
+                        <h1>주요 번화가 <br>인기 매장 맞춤 추천</h1>
+                        <p class="text">어느 곳을 갈지 고민되나요?<br>
+                            서울의 인기 지역 다 여기있어요 </p>
+                        <a href='../html/course.html'>
+                            <input class="move-button" type="button" value=" 지역 인기 코스 보러가기" style="cursor:pointer;">
+                        </a>
                     </div>
-
                 </div>
                 <div class="section-wrap">
-                    <img src="img/img3.svg" height="600px">
+                    <img src="../img/main-page-img/img3.png">
                 </div>
             </div>
         </div>
@@ -90,8 +94,6 @@
             </ul>
         </div>
     </div>
-
-
 
 </body>
 
