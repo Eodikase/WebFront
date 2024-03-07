@@ -88,7 +88,7 @@ ul {
     align-items: center;
 }
 
-.feed {
+#feed {
     width: 100%;
     min-height: auto;
     background-color: rgb(0, 179, 255);

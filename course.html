@@ -9,9 +9,36 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css"
         href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- axios 추가 -->
 </head>
 
 <body>
+
+    <script>
+        // const axios = require('axios'); 
+        // 전국 코스 가져오기
+
+
+        function getCourse() {
+            const container = document.getElementById('feed');
+
+            axios.get('https://eodikase.com/v1/courses')
+                .then(function (response) {
+                    // 성공시 경우 실행
+                    console.log('GET Response Data:', response.data);
+                    //dataContainer.innerText = '결과: ' + JSON.stringify(response.data, null, 2);
+                    container.innerText = JSON.stringify(response.data, null, 2);
+                })
+                .catch(function (error) {
+                    // 에러인 경우 실행
+                    console.log(error);
+                });
+        }
+    </script>
+
     <div class="container">
         <!--header-->
         <div class="header">
@@ -61,7 +88,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="feed">feed</div>
+                <div id="feed"></div>
                 <div class="more">more</div>
             </div>
 
